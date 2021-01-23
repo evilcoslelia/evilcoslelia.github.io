@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>
+        lelia
+    </title>
+    
+<link rel="stylesheet" href="/libs/highlight/styles/monokai-sublime.css">
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.3.0"></head>
+
+<body id="bodyx">
+    <div class="hd posts">
+    <a href="/index.html"><i class="fa fa-reply replay-btn" aria-hidden="true"></i></a>
+    <div class="post-title">
+        <p>
+            号外：知识管理工具
+        </p>
+        <hr>
+    </div>
+    <div class="post-content">
+        <p><img src="https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F57e3a9a0-fd2d-4cd6-9e50-05119a241c7b_234x234.png"></p>
+<p>因为后台收到不少有关知识管理和Tiddlywiki的咨询，所以就此来个号外吧。知识管理，我采用的框架是<strong>：</strong></p>
+<ul>
+<li>流程：收集、整理、消化和输出</li>
+<li><strong>系统：</strong>信息、知识和经验</li>
+<li><strong>结果：</strong>显性知识 →隐性知识</li>
+</ul>
+<p>关于个人知识管理（PKM），其实涉及到思维框架问题，这个话题就大了（另外一期再谈），今天就单说一下我使用Tiddlywiki的感受吧。</p>
+<p>前些天Notion 在中国被和谐，尽管部分地区已访问无碍，但是可预见的未来一定是会被关进小黑屋的，只要是可公开的内容分享平台都难逃这个命运，例如 Evernote、Google Doc等。最近由于几个基于Tiddlywiki衍生应用出来，如Stroll、Roam research，Tiddlywiki被许多人关注。许多人留言给我，让我介绍一下它。Tiddlywiki在中国鲜有人用，我可能是最早和最长时间使用者，我的小站也被官方作为案例推过两次:)。我想，是时候说一下我的使用感受了。</p>
+<p>Tiddlywiki是由一名英国剑桥镇老牌程序员Jeremy Ruston开发和维护，已经有十几年了，而且以每年 1–2 个版本的节奏在更新。截止现在已经形成了全球使用者小圈子，有许多插件和资源可以用。因为Tiddlywiki就是一个单HTML文件，所以可以用来做笔记（支持 Markdown）；做博客系统；做 PKM；GTD时间管理、项目管理、甚至有人拿它做购物网站等等。我是用它做PKM，就是书籍管理+读书笔记+博客+其它分享等。因为Tiddlywiki是单文件，不需要依赖数据库，也不需要网络环境。你放在本地，就是一个笔记本；扔在网络上就是一个 www 网站。</p>
+<p><strong>我现在的 PKM（rizi.me）解决方案：</strong></p>
+<ul>
+<li>本地我使用官方<a href="https://github.com/Jermolene/TiddlyDesktop/releases">TiddlyDesktop</a>来编辑，并存放在本地 Onedrive 文件夹（备份和同步），利用<a target="_blank" rel="noopener" href="https://console.cloud.tencent.com/scf/list/detail?rid=5&ns=default&id=rizibox&tab=triggerTab">腾讯无服务器云函数</a>（免费）调用Onedrive API解析，达成网络可访问的效果。同理，我的图床也是使用Onedrive。</li>
+</ul>
+<p>如果你想使用自有服务器，可以使用我之前的解决方案：</p>
+<ul>
+<li><p>本地文件放在 Onedrive 文件夹，当你更新时，利用 <a target="_blank" rel="noopener" href="https://asia.flow.microsoft.com/zh-cn/">Microsoft Flow</a> 或者 <a target="_blank" rel="noopener" href="https://www.ifttt.com/">IFTTT </a>触发，并自动上传到你的服务器，不用手动使用 FTP 了。</p>
+</li>
+<li><p>当然你也可以把它扔到星际文件系统IPFS链上做备份（例如我测试的<a target="_blank" rel="noopener" href="http://io.rizi.me/">这个</a>），利用 Cloudfare 解析就生成自己的网站了（Cloudfare现在已经<a target="_blank" rel="noopener" href="https://cloudflare-ipfs.com/">支持IPFS解析</a>了）。</p>
+</li>
+</ul>
+<p>上面是我在使用的比较方便的解决办法，其它一些常规玩法，例如：放在 Google Drive、Dropbox 上访问、直接存储在 GitHub （或 heroku）上、在线编辑并存储等，可以访问这个一位台湾爱好者维护的非官方中文网站，介绍的非常全面。[→](<a target="_blank" rel="noopener" href="http://tw5-zh-hans.tiddlyspot.com/#GettingStarted:HelloThere">http://tw5-zh-hans.tiddlyspot.com/#GettingStarted:HelloThere</a> GettingStarted Community)</p>
+<p>其实我并不想也一直没有安利Tiddlywiki，因为它还是有一定的使用技术门槛的，当然基本使用没问题，非常简单，但是要想玩出花样，可能你就需要花一些时间来研究了。</p>
+<p><strong>Tiddlywiki突出优点：</strong></p>
+<ul>
+<li>安全并可控，不依赖任何第三方；</li>
+<li>拓展性大，随心所欲；</li>
+<li>知识点互联，生成系统知识；</li>
+<li>内容随意聚合和调用；</li>
+<li>单文件，可随意部署（我用了五六年，而且经常用，目前文件只有 5M，提示：图片不要存储在上面，使用链接）。</li>
+</ul>
+<p><strong>相关资源：</strong></p>
+<ol>
+<li>官方网站：<a target="_blank" rel="noopener" href="https://tiddlywiki.com/">https://tiddlywiki.com/</a></li>
+<li>一位台湾爱好者维护的<a target="_blank" rel="noopener" href="http://tw5-zh-hans.tiddlyspot.com/">中文版</a></li>
+<li>全球Tiddlywiki爱好者社区：<a target="_blank" rel="noopener" href="https://groups.google.com/forum/#!forum/tiddlywiki">→</a> （在里面可以找到任何你想要的，Jeremy经常在里面回答一些问题）；</li>
+<li>官方资源页面：<a target="_blank" rel="noopener" href="https://tiddlywiki.com/static/Resources.html">→</a></li>
+<li>爱好者收集的资源页面（插件、主题、UI 以及案例等）：<a target="_blank" rel="noopener" href="https://dynalist.io/d/zUP-nIWu2FFoXH-oM7L7d9DM">→</a></li>
+<li>一位读者找到的 YouTube 介绍视频 <a target="_blank" rel="noopener" href="https://www.youtube.com/playlist?list=PLzZCajspPU_UjFn0uy-J9URz0LP4zhxRK">→</a></li>
+<li>瑞士军刀型插件：<a target="_blank" rel="noopener" href="https://kookma.github.io/TW-Shiraz/">Shiraz</a></li>
+</ol>
+<p>PS. 我并不建议安装很多插件，一是变得很臃肿，二是后续版本如果和插件不兼容了，插件作者也不更新，之前的内容就需要重新来改，很麻烦。而推荐使用简单的Scripts实现，网上都可以找得到的。例如最近很热的Roam核心功能Backlinks，可以用很简单的一段代码实现：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;$list filter&#x3D;“[all[current]backlinks[]sort[title]]” emptyMessage&#x3D;“”&gt;</span><br><span class="line">&lt;$link to&#x3D;&#123;&#123;!!title&#125;&#125;&gt;&lt;$view field&#x3D;“title”&#x2F;&gt;: &lt;&#x2F;$link&gt;</span><br><span class="line">&lt;&#x2F;$list&gt;</span><br></pre></td></tr></table></figure>
+<p>最后，个人的建议：<strong>一切工具都是为内容服务的，别舍本求末，尝试和追求各种工具或应用，而应该重道而轻器。任何优雅的都是简单的。</strong></p>
+
+    </div>
+
+    
+        <hr class="fhr">
+        <div id="vcomments"></div>
+    
+</div>
+    <div class="footer" id="footer">
+    <p>Copyright © 2020 <a class="flink" target="_blank" rel="noopener" href="https://hexo.io">Hexo</a>-<a class="flink" href="https://github.com/sanjinhub/hexo-theme-geek">Geek</a>.
+        <label class="el-switch el-switch-green el-switch-sm" style="vertical-align: sub;">
+            <input type="checkbox" name="switch" id="update_style">
+            <span class="el-switch-style"></span>
+        </label>
+<!--         <script type="text/javascript">
+        var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+        document.write(unescape("%3Cspan id='cnzz_stat_icon_1278548644'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D1278548644%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+        </script> -->
+    </p>
+</div>
+<input type="hidden" id="web_style" value="black">
+<input type="hidden" id="valine_appid" value="iAsWQVfvHoSD6eidOyUBWiJc-gzGzoHsz">
+<input type="hidden" id="valine_appKey" value="lwkoNteLPbJrQi6rEsGGjwOM">
+
+<script src="/libs/jquery.min.js"></script>
+
+
+<script src="/libs/highlight/highlight.pack.js"></script>
+
+<script src='//cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js'></script>
+
+<script src="/js/js.js"></script>
+
+<style type="text/css">
+.v * {
+    color: #698fca;
+}
+
+.v .vlist .vcard .vhead .vsys {
+    color: #3a3e4a;
+}
+
+.v .vlist .vcard .vh .vmeta .vat {
+    color: #638fd5;
+}
+
+.v .vlist .vcard .vhead .vnick {
+    color: #6ba1ff;
+}
+
+.v a {
+    color: #8696b1;
+}
+
+.v .vlist .vcard .vhead .vnick:hover {
+    color: #669bfc;
+}
+</style>
+</body>
+
+</html>
